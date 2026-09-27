@@ -1,0 +1,19 @@
+name: release
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: read
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Verify asset checksum
+        run: cd dist && sha256sum -c replay.html.sha256
+      - name: Create release
+        run: gh release create "$GITHUB_REF_NAME" dist/replay.html dist/replay.html.sha256 --title "$GITHUB_REF_NAME" --notes-file CHANGELOG.md --verify-tag
+        env:
+          GH_TOKEN: ${{ github.token }}

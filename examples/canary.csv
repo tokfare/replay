@@ -1,0 +1,4 @@
+timestamp,customer,model,input_tokens,output_tokens,cached_input_tokens
+2026-09-01,REPLAY-CANARY-02117441edcc-a,gpt-4o-mini,120000,30000,20000
+2026-09-02,REPLAY-CANARY-02117441edcc-b,claude-sonnet-4-5,40000,8000,0
+2026-09-03,REPLAY-CANARY-02117441edcc-b,unknown-model-x,1000,100,0

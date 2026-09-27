@@ -9,7 +9,7 @@ See what your own LLM usage would look like as a per-customer invoice in Korean 
 
 ## How to use
 1. Download `replay.html` from the [latest release](https://github.com/tokfare/replay/releases/latest).
-2. Optional: check the file. `shasum -a 256 replay.html` should print the value in `replay.html.sha256` (v0.1.0: `29baae5c6073ec4548f81f5e44d022ba6fe9532706c14ab4b953d29d9cf6a12c`).
+2. Optional: check the file. `shasum -a 256 replay.html` should print the value in `replay.html.sha256` (v0.1.1: `6065fff5ab75cb595f85f55b3d8aa2dff1a571caf8032cf38e0a616f2f686d11`).
 3. Open it in a browser (double-click works; no server needed).
 4. Enter the exchange rate (KRW per USD), its basis date, and a margin (%). Leave them empty to see USD cost only.
 5. Choose a usage file. Try the fake files in [`examples/`](examples/) first.
@@ -33,7 +33,7 @@ There is a "hide customer identifiers" switch for screen sharing.
 
 ## Updates
 - Releases are listed in [`CHANGELOG.md`](CHANGELOG.md). Each release attaches `replay.html` and its SHA-256.
-- Contact: hello@tokfare.com · Updates: https://tokfare.com/?utm_source=gh-release&utm_medium=tool&utm_campaign=replay-v0.1.0
+- Contact: hello@tokfare.com · Updates: https://tokfare.com/?utm_source=gh-release&utm_medium=tool&utm_campaign=replay-v0.1.1
 
 ---
 
@@ -67,4 +67,4 @@ There is a "hide customer identifiers" switch for screen sharing.
 
 ### 소식
 - 변경 기록은 [`CHANGELOG.md`](CHANGELOG.md)에 있습니다.
-- 문의: hello@tokfare.com · 소식 받기: https://tokfare.com/?utm_source=gh-release&utm_medium=tool&utm_campaign=replay-v0.1.0
+- 문의: hello@tokfare.com · 소식 받기: https://tokfare.com/?utm_source=gh-release&utm_medium=tool&utm_campaign=replay-v0.1.1

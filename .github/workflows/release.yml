@@ -15,7 +15,11 @@ jobs:
           persist-credentials: false
       - name: Verify asset checksum
         run: cd dist && sha256sum -c replay.html.sha256
+      - name: Release notes (this tag's section only)
+        run: |
+          awk -v tag="$GITHUB_REF_NAME" 'index($0, "## " tag " ") == 1 {f=1; next} /^## / {f=0} f' CHANGELOG.md > notes.md
+          test -s notes.md
       - name: Create release
-        run: gh release create "$GITHUB_REF_NAME" dist/replay.html dist/replay.html.sha256 --title "$GITHUB_REF_NAME" --notes-file CHANGELOG.md --verify-tag
+        run: gh release create "$GITHUB_REF_NAME" dist/replay.html dist/replay.html.sha256 --title "$GITHUB_REF_NAME" --notes-file notes.md --verify-tag
         env:
           GH_TOKEN: ${{ github.token }}

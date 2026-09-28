@@ -1,0 +1,10 @@
+timestamp,customer,model,input_tokens,output_tokens,cached_input_tokens,task_id
+2026-09-01T09:00:00Z,cust-alpha,gpt-4o-mini,3000,800,0,doc-001
+2026-09-01T09:00:05Z,cust-alpha,gpt-4.1,2500,600,0,doc-001
+2026-09-01T10:00:00Z,cust-alpha,gpt-4o-mini,4000,1000,0,doc-002
+2026-09-02T11:00:00Z,cust-alpha,claude-sonnet-4-5,6000,1500,0,doc-003
+2026-09-02T12:00:00Z,cust-beta,gpt-4.1,3000,700,1000,doc-101
+2026-09-03T09:00:00Z,cust-beta,gpt-4o-mini,2000,500,0,doc-102
+2026-09-03T09:00:04Z,cust-beta,gpt-4o-mini,1500,400,0,doc-102
+2026-09-03T15:00:00Z,cust-beta,claude-sonnet-4-5,2000,300,0,doc-103
+2026-09-04T08:00:00Z,cust-gamma,gpt-4.1,5000,2000,0,doc-201

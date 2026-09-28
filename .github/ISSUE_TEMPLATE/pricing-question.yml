@@ -1,0 +1,28 @@
+name: Pricing question
+description: Ask about token, credit, or per-task pricing with replay.html
+title: "[pricing] "
+labels: ["pricing-question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please do **not** attach usage files and do **not** post customer names, project IDs, API key IDs, or other personal or company data. Describe your case in general terms or with made-up numbers.
+        사용량 파일을 첨부하지 말고, 고객 이름·프로젝트 ID·API 키 ID 같은 개인·회사 정보를 올리지 마세요. 일반적인 설명이나 임의의 숫자로 적어 주세요.
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Topic / 주제
+      options:
+        - Cost-linked per-token price / 원가 연동 토큰 단가
+        - Credit price design / 크레딧 가격 설계
+        - Per-task price and margin check / 건당 가격·마진 점검
+        - Other / 기타
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question / 질문
+      description: What would you like to know or see in the tool? / 알고 싶은 것이나 도구에 있었으면 하는 것
+    validations:
+      required: true

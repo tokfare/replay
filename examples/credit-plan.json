@@ -1,0 +1,8 @@
+{
+  "description": "Fake per-model credit deduction rates for testing (credits per 1,000 tokens). Not any real company's prices.",
+  "models": {
+    "gpt-4o-mini": { "input_per_1k": 0.05, "output_per_1k": 0.2 },
+    "gpt-4.1": { "input_per_1k": 0.6, "output_per_1k": 2.4 },
+    "claude-sonnet-4-5": { "input_per_1k": 0.9, "output_per_1k": 4.5 }
+  }
+}

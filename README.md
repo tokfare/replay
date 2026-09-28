@@ -11,7 +11,7 @@ See what your own LLM usage would look like as a per-customer invoice in Korean 
 
 ## How to use
 1. Download `replay.html` from the [latest release](https://github.com/tokfare/replay/releases/latest).
-2. Optional: check the file. `shasum -a 256 replay.html` should print the value in `replay.html.sha256` (v0.2.0: `78109cc37b8e45b5d5bf1799b64e2c87f86d0705abeaf986990811b2cf0aea70`).
+2. Optional: check the file. `shasum -a 256 replay.html` should print the value in `replay.html.sha256` (v0.2.0 and v0.2.1: `78109cc37b8e45b5d5bf1799b64e2c87f86d0705abeaf986990811b2cf0aea70`).
 3. Open it in a browser (double-click works; no server needed).
 4. Enter the exchange rate (KRW per USD), its basis date, and a margin (%). Leave them empty to see USD cost only.
 5. Choose a usage file. Try the fake files in [`examples/`](examples/) first.

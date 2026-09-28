@@ -23,3 +23,12 @@ jobs:
         run: gh release create "$GITHUB_REF_NAME" dist/replay.html dist/replay.html.sha256 --title "$GITHUB_REF_NAME" --notes-file notes.md --verify-tag
         env:
           GH_TOKEN: ${{ github.token }}
+  labels:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Ensure issue-form label exists
+        run: gh label create "pricing-question" --repo "$GITHUB_REPOSITORY" --color 1d76db --description "Question about token, credit, or per-task pricing" --force
+        env:
+          GH_TOKEN: ${{ github.token }}

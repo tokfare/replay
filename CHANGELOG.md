@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.2.1 — 2026-09-28
+- Release workflow now creates the `pricing-question` label used by the "Pricing question" issue form.
+- `replay.html` is unchanged from v0.2.0 (65,238 bytes, SHA-256 `78109cc37b8e45b5d5bf1799b64e2c87f86d0705abeaf986990811b2cf0aea70`).
+
 ## v0.2.0 — 2026-09-28
 - New pricing modes in `replay.html` (65,238 bytes, SHA-256 `78109cc37b8e45b5d5bf1799b64e2c87f86d0705abeaf986990811b2cf0aea70`):
   - **Credit**: price of 1 credit (KRW, before VAT) and credits per 1,000 input/output tokens, optional per-model rates file → per-customer credits, credit amount, cost, margin, and break-even price of 1 credit; lines where the credit amount is below cost.
